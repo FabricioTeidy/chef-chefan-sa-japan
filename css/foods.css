@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -89,7 +93,7 @@ img{
 }
 
 h3{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 15px;
     font-size: 39px;
     font-family: Great Vibes;
@@ -97,7 +101,7 @@ h3{
 }
 
 .main ul{
-    padding: 0 110px;
+    padding: 0 110px 105px 110px;
     list-style: none;
 }
 
@@ -108,7 +112,7 @@ h3{
     padding: 3px 0;
 }
 
-.left1{
+.left1,.left2{
     float: left;
     width: 33.3%;
     box-sizing: border-box;
@@ -123,10 +127,9 @@ h3{
     text-align: center;
     font-size: 27px;
     color: brown;
-
 }
 
-.right1{
+.right1,.right2{
     float: right;
     width: 33.3%;
     box-sizing: border-box;
@@ -135,30 +138,45 @@ h3{
     text-align: center;
 }
 
-.left2{
-    float: left;
+.center2{
+    display: inline-block;
     width: 33.3%;
-    box-sizing: border-box;
+    text-align: center;
     font-size: 27px;
     color: brown;
-    text-align: center;
-    margin-top: 75px;
+    padding-top: 70px;
 }
 
 @media(max-width: 1000px){
-    .left1{
+    .left1,.left2{
         width: 100%;
         float: none;
         padding-bottom: 40px;
     }
-    .center1{
+    .center1,.center2{
         width: 100%;
         float: none;
         padding-bottom: 40px;
     }
-    .right1{
+    .right1,.right2{
         width: 100%;
         float: none;
         padding-bottom: 40px;
     }
+    .main{
+        height: 600vh;
+    }
+}
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: brown;
+    bottom: 40px;
+    right: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
 }
