@@ -73,20 +73,23 @@ a.active,.navbar a:hover{
 .main{
     background-image: url(/images/background6.jpg);
     background-size: contain;
-    height: 400vh;
+    height: 100%;
 }
 
 h2{
     text-align: center;
-    font-size: 55px;
+    font-size: 59px;
     font-family: Great Vibes;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     color: brown;
 }
 
 img{
-    width: 45%;
+    width: 35vmin;
+    height: 35vmin;
+    object-fit: cover;
+    object-position: center;
     padding-top: 0px;
     border: 5px solid rgba(214, 25, 25, 0.644);
     border-radius: 30px;
@@ -108,11 +111,11 @@ h3{
 .main li{
     font-size: 22px;
     text-decoration: underline;
-    background-color: rgba(255, 255, 255, 0.315);
+    background-color: rgba(255, 255, 255, 0.336);
     padding: 3px 0;
 }
 
-.left1,.left2{
+.left1,.left2,.left3,.left4,.left5,.left6{
     float: left;
     width: 33.3%;
     box-sizing: border-box;
@@ -121,7 +124,7 @@ h3{
     text-align: center;
 }
 
-.center1{
+.center1,.center2,.center3,.center4,.center5,.center6{
     display: inline-block;
     width: 33.3%;
     text-align: center;
@@ -129,7 +132,7 @@ h3{
     color: brown;
 }
 
-.right1,.right2{
+.right1,.right2,.right3,.right4,.right5,.right6{
     float: right;
     width: 33.3%;
     box-sizing: border-box;
@@ -138,33 +141,28 @@ h3{
     text-align: center;
 }
 
-.center2{
-    display: inline-block;
-    width: 33.3%;
-    text-align: center;
-    font-size: 27px;
-    color: brown;
-    padding-top: 70px;
-}
 
-@media(max-width: 1000px){
-    .left1,.left2{
+@media(max-width: 1220px){
+    h1{
+        font-size: 40px;
+    }
+    .left1,.left2,.left3,.left4,.left5,.left6{
         width: 100%;
         float: none;
         padding-bottom: 40px;
     }
-    .center1,.center2{
+    .center1,.center2,.center3,.center4,.center5,.center6{
         width: 100%;
         float: none;
         padding-bottom: 40px;
     }
-    .right1,.right2{
+    .right1,.right2,.right3,.right4,.right5,.right6{
         width: 100%;
         float: none;
         padding-bottom: 40px;
     }
     .main{
-        height: 600vh;
+        height: 100%;
     }
 }
 

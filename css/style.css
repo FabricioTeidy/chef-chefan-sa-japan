@@ -122,3 +122,9 @@ a.active,.navbar a:hover{
         height: 100%;
     }
 }
+
+@media(max-width:1120px){
+    h1{
+        font-size: 40px;
+    }
+    }

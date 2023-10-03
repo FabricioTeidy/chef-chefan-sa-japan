@@ -64,3 +64,9 @@ a.active,.navbar a:hover{
     border-radius: 15px;
     transition: background-color .7s linear;
 }
+
+@media(max-width:1120px){
+    h1{
+        font-size: 40px;
+    }
+    }

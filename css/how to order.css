@@ -64,3 +64,55 @@ a.active,.navbar a:hover{
     border-radius: 15px;
     transition: background-color .7s linear;
 }
+
+.main{
+    background-image: url(/images/test.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 84.8vh;
+    padding-top: 85px
+}
+
+#box{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.589);
+    text-align: center;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+h2{
+    font-size: 39px;
+    color:rgb(255, 255, 255);
+}
+
+h3{
+    padding: 15px 0;
+    font-size: 27px;
+    color: white;
+}
+
+.main a{
+    color: rgb(51, 129, 197);
+    transition: .3s;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 15px;
+    padding: 4px 10px;
+}
+
+.main a:hover{
+    background-color: rgb(51, 129, 197);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+@media(max-width:1020px){
+    h1{
+        font-size: 40px;
+    }
+    #box{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    }
