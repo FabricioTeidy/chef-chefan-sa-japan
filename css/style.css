@@ -123,7 +123,7 @@ a.active,.navbar a:hover{
     }
 }
 
-@media(max-width:1120px){
+@media(max-width:700px){
     h1{
         font-size: 40px;
     }
