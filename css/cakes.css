@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -34,25 +38,29 @@ h1{
 }
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.747);
-    height: 55px;
+    background-color: rgba(0, 0, 0, 0.897);
+    height: fit-content;
 }
 
 .navbar ul{
     padding: 15px 0;
     list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar li{
     display: inline;
     position: relative;
     right: 25px;
-    padding: 0 5px;
+    padding: 10px 5px;
 }
 
 .navbar a{
-    color: rgb(170, 82, 0);
+    color: #FF9B3D;
     text-decoration: none;
     font-size: 20px;
     padding: 1px 20px;
@@ -60,13 +68,151 @@ h1{
 
 a.active,.navbar a:hover{
     border: 2px solid white;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.164);
     border-radius: 15px;
     transition: background-color .7s linear;
 }
 
-@media(max-width:1120px){
+.main{
+    background-image: url(/images/background6.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2{
+    text-align: center;
+    font-size: 59px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: brown;
+    }
+
+img{
+    width: 35vmin;
+    height: 35vmin;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 0px;
+    border: 5px solid rgba(214, 25, 25, 0.644);
+    border-radius: 30px;
+}
+
+h3{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 35px;
+    font-family: Great Vibes;
+    color: black;
+}
+
+.main ul{
+    padding: 0 100px 105px 100px;
+    min-width: 300px;
+    list-style: none;
+}
+
+.main li{
+    font-size: 22px;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 3px 0;
+}
+
+.left1,.left2{
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    color: brown;
+    text-align: center;
+}
+
+.center1,.center2,.center3{
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+    color: brown;
+}
+
+.right1,.right2{
+    float: right;
+    width: 33.3%;
+    box-sizing: border-box;
+    color: brown;
+    text-align: center;
+}
+
+@media(max-width: 1220px){
     h1{
         font-size: 40px;
     }
+    .left1,.left2{
+        width: 100%;
+        float: none;
+        padding-bottom: 40px;
     }
+    .center1,.center2,.center3{
+        width: 100%;
+        float: none;
+        padding-bottom: 40px;
+    }
+    .right1,.right2{
+        width: 100%;
+        float: none;
+        padding-bottom: 40px;
+    }
+    .main{
+        height: 100%;
+    }
+    img{
+        width: 40vmin;
+        height: 40vmin;
+    }
+}
+
+@media(max-width: 450px){
+    h1{
+        font-size: 27px;
+    }
+    .left1,.left2{
+        width: 100%;
+        float: none;
+        padding-bottom: 10px;
+    }
+    .center1,.center2,.center3{
+        width: 100%;
+        float: none;
+        padding-bottom: 10px;
+    }
+    .right1,.right2{
+        width: 100%;
+        float: none;
+        padding-bottom: 10px;
+    }
+    .main{
+        height: 100%;
+    }
+    .navbar{
+        height: fit-content;
+    }
+    .main ul{
+        padding: 0 30px 90px 30px;
+    }
+    img{
+        width: 75vmin;
+        height: 75vmin;
+    }
+}
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: brown;
+    bottom: 40px;
+    right: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
